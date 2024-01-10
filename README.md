@@ -34,9 +34,20 @@ In this project I setup Azure Sentinel, a SIEM(Security Information and Event Ma
    
      <img src="https://i.imgur.com/KgRdOQe.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
-   -You will need  a Username and a Password to login write it down on a Note or a .txt
+   -You will need a Username and a Password to log in to the VM, write it down on a Note or a .txt
+
+   -Now we go to Networking and in the "NIC network security group" click Advanced and under that we need to create a new Network Security Group
+
+   <img src="https://i.imgur.com/THTAXms.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+   -We want the Firewall of the VM to be open to the Internet so when we click on create new on this new windows remove the default inbound rule that was created 
  
-   
+   <img src="https://i.imgur.com/vmgjTjK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  -Then +Add an inbound rule and on the Destination port range type a *(for any port), Priority 100 and the name could be anything
+   <img src="https://i.imgur.com/Sf7YXNQ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 
 
+
+<img src="https://i.imgur.com/Sf7YXNQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
