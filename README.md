@@ -89,25 +89,65 @@ In this project I setup Azure Sentinel, a SIEM(Security Information and Event Ma
 
 <img src="https://i.imgur.com/CoqjPiS.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
--Copy the IP address and go to your search(your actual computer) and search for remote desktop
+-Copy the IP address and go to your search(your actual computer) and search for remote desktop. I will encourage you to fail the first attempt to login so we can see the logs once into teh VM you could type the wrong password 
 
 <img src="https://i.imgur.com/gg2vCXK.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 
-First will tell that the identify computer cannot be verified and if you want to connect anyway select "Yes" 
+-First will tell that the identify computer cannot be verified and if you want to connect anyway select "Yes" 
 
 <img src="https://i.imgur.com/dsrHeUi.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
-and second (once into the VM) will and you about chooosing your privacy setting select "No" for everything 
+and second (once into the VM) will and you about chooosing your privacy setting select "No" for everything and Accept
 
 
 <img src="https://i.imgur.com/45xt66X.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
+-Next into the VM go to "Event Viewer"
+
+<img src="https://i.imgur.com/SSFmS5x.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+-Once into the Event Viewer click on Windows Logs and Security. This are all the security logs and we will look for the one with the Event ID 4265
+
+<img src="https://i.imgur.com/t7rBwLa.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+-Once you locate the log click on it to see general information like why it failed, the account that try lo login and even some network information like the IP address of the computer if you scroll down 
+
+<img src="https://i.imgur.com/d31Gr8C.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+ -Next step configure firewall. On the search bar type wf.msc and select the Miscrosof Common Console Document
+
+<img src="https://i.imgur.com/dKe08TH.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+ -On the new window go to "Windows Defender Firewall Properties"
+
+<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+ -Now we need to turn off the Firewall state on the Domain Profile, Private Profile and Public Profile sections. Click Apply and OK
+
+ <img src="https://i.imgur.com/jqNfzym.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+ -Open Powershell ISE  
+
+<img src="https://i.imgur.com/crEIuv1.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+
+ -Click on New Script
+
+<img src="https://i.imgur.com/x7nvUjR.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
 
-<img src="https://i.imgur.com/dsrHeUi.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
 
+<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
 
-<img src="https://i.imgur.com/45xt66X.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+
+<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+
+<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
