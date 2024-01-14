@@ -253,9 +253,23 @@ and second (once into the VM) will and you about chooosing your privacy setting 
 
 <img src="https://i.imgur.com/OD5aC7B.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
-<img src="https://i.imgur.com/ztqrtgb.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+ -Next "Save and Close" the map settings
 
-<img src="https://i.imgur.com/ztqrtgb.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/XO2oR8Z.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+ -And save the map. You can choose a name like "Failed RDP World Map", your Resource Group and same region of your VM and Save it adn Done Editing. 
+<img src="https://i.imgur.com/y6P27Zt.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+ -Something important to have in mind the VM with the Powershell script running still need to be running to allow the map to collect the data if not will only be gather by Windows Events logs and not to our custom log which is what we need for the extraction of the geodata
+
+ -Now we just need to wait for the attackers and the Map to locate the attacks. Leave the map open and wait for it you can set an Auto refresh or do it manually
+ 
+<img src="https://i.imgur.com/4oar0ub.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+ -Someone from Canada already tried to login into my VM as you can see let's wait to see if it shows up on the map this may take a couple hours so don't desperate this is for educational purposes
+
+ <img src="https://i.imgur.com/XK8SLmQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ 
 
 
 
