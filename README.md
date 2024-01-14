@@ -229,8 +229,33 @@ and second (once into the VM) will and you about chooosing your privacy setting 
 
 <img src="https://i.imgur.com/tz9yjz3.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
+  -On the query blank copy the same query that we use to see the logs 
 
-<img src="https://i.imgur.com/5Rozz1S.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ztqrtgb.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+ -But on the visualization setting we'll select by Map
+
+<img src="https://i.imgur.com/HL6kZPE.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+ -Now the map will show up and mine already have my failed attempts to login located on it 
+
+<img src="https://i.imgur.com/mPgNJod.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+ -You can also see on the right settings you can filter for example on "Metric Settings" you can select "Metric Label" adn choose "label", click on Apply 
+
+<img src="https://i.imgur.com/Uy8haH1.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+ -And you will see on the bottom left corner of the map is showing up the country and the IP address
+
+<img src="https://i.imgur.com/jw6wIZy.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+ -Or by setting the Metric Value you can see that we have 6 failed logon from the United States from that IP address
+
+<img src="https://i.imgur.com/OD5aC7B.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/ztqrtgb.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/ztqrtgb.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
 
 
