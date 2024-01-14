@@ -135,15 +135,22 @@ and second (once into the VM) will and you about chooosing your privacy setting 
  <img src="https://i.imgur.com/x7nvUjR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
  
- -And copy the code from this link https://github.com/ale1259/SIEM-Azure Sentinel/blob/main/Custom%20Security%20Log%20Exporter.ps1
+ -And copy the code from this link in that file https://github.com/ale1259/SIEM-Azure Sentinel/blob/main/Custom%20Security%20Log%20Exporter.ps1
 
 <img src="https://i.imgur.com/eTERvbN.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
+ -To continue we need to obtain a new API KEY number that is unique 
 
-<img src="https://i.imgur.com/x7nvUjR.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/WJG25O5.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
+ 
+ -To do this go to https://ipgeolocation.io/. This is a free app that we will use for our project. Click on the three bars, sign up, enter all the information: username, password and email address necessary  
 
-<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ITkgPyW.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+ -You will get your unique API KEY on the Dashboard section after you sign up
+
+<img src="https://i.imgur.com/LYbTdb3.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
 
 <img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
