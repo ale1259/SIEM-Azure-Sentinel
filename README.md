@@ -170,12 +170,35 @@ and second (once into the VM) will and you about chooosing your privacy setting 
 
 <img src="https://i.imgur.com/HRWCjOu.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
- -The file we need is the file from our VM that is collecting the logs that is C:\ProgramData\failed_rdp.log. When creating the custom log you need to copy the failed_rdp.log. file into your actual computer and select that file, then click Next skipping the Recorder delimiter section and on Collecting paths select type Windows and C:\ProgramData\failed_rdp.log. is the path on the VM, on Details I name the custom log FAILED_RDP_WITH_GEO_CL you can name it whatever you like, click next and Review and create. 
+ -The file we need is the file from our VM that is collecting the logs that is C:\ProgramData\failed_rdp.log. When creating the custom log you need to copy the failed_rdp.log. file into your actual computer and select that file, then click Next skipping the Recorder delimiter section and on Collecting paths select type Windows and C:\ProgramData\failed_rdp.log. is the path on the VM, on Details I name the custom log FAILED_RDP_WITH_GEO you can name it whatever you like, click next and Review and create. 
 
- -This will take a while for the Log Analytics Workspace and th VM to sync up and bring the logs into Log Analytics Workspace. To see this got to your Log Analytics Workspace and on the left column select Logs. Type your custom log name, FAILED_RDP_WITH_GEO_CL is my case. 
+ -This will take a while for the Log Analytics Workspace and th VM to sync up and bring the logs into Log Analytics Workspace. To see this got to your Log Analytics Workspace and on the left column select Logs. Type your custom log name, FAILED_RDP_WITH_GEO is my case.Probably will say "No results found from the last 24 hours' as in the picture, but you can see later the custom logs entries there. 
+ 
 
-<img src="https://i.imgur.com/KsBqZz5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/HaELH4N.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-Probably will say "No results found from the last 24 hours' as in the picture, but you can see later the custom logs entries there 
+ 
+
+ -Let's try it with the Securityevents. As you could see the logs showed up and those are the logs collected by the Event Viewer on the VM. In case nothing show up don't panic it may take a while to sync up as I said
+
+<img src="https://i.imgur.com/M5x0lhl.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+ -You can try for example on the query type Securityevent | where EventID == 4625 and will show you this will return all the failed rdp logs. 
+
+<img src="https://i.imgur.com/0xCNt90.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+ -If you expand the logs you will see information like the account failed to logon, the IP address, the username that try to login and so forth. So may I suggest that you wait 10-15 minutes to try again with the failed rdp logs
+
+<img src="https://i.imgur.com/z2PDtRg.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+ -Now that the logs are visible there is a column on the entries that is called RawData we need to extract certain fields from it and have separeted in differents fields like latitude, longitude,counrty, etc.
+
+<img src="https://i.imgur.com/3lDA6kM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
 <img src="https://i.imgur.com/AJ1QBii.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+<img src="https://i.imgur.com/AJ1QBii.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 
