@@ -52,20 +52,62 @@ In this project I setup Azure Sentinel, a SIEM(Security Information and Event Ma
 
 <img src="https://i.imgur.com/U9GmRsm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-   -Select the previous Resoruce Group and a name for your Log Analytics Workspace. Review and create->Create
+   -Select the previous Resource Group and a name for your Log Analytics Workspace, I chose LAW-Honeypot1. Review and create->Create
 
    -Next we need to go to Microsoft Defender for Cloud in the Azure Portal to enable the ability to gather logs from the VM into the Log Analytics Workspace. Once you are on Microsoft Defender for Cloud go to Environment settings on the left column and select your Subscription and the Log Analytics Workspace
 
 <img src="https://i.imgur.com/CgZEgl2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-  -On the defender plans turn on the Servers and turn off the SQL Servers on machines 
-<img src="https://i.imgur.com/Clwo6fH.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  -On the defender plans turn on the "Servers" and turn off the "SQL Servers" on machines 
+<img src="https://i.imgur.com/Clwo6fH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-  -
+  -Go to the next section "Data Collection" and select "All Events"
+
+  <img src="https://i.imgur.com/9Uae2Ky.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+  -After that since we need to connect our VM with the Log Analytics Workspace go to the Log Analytics Workspace(LAW-Honeypot1 my case) and on the left column go to Virtual Machines(deprecated) and select your VM
+
+<img src="https://i.imgur.com/C7IifSE.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+ -Click on connect. As you can see my is already connected
+ 
+<img src="https://i.imgur.com/X4LJyvH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ 
+ -Now we need to create Sentinel. On your Azure Portal go and type sentinel on the search bar and choose Microsoft Sentinel. 
+
+<img src="https://i.imgur.com/cgzPAIl.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+-Select "+Create"
+
+<img src="https://i.imgur.com/sjJmTw9.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+-Click on your Log Analytics Workspace and click "Add"
+
+<img src="https://i.imgur.com/TTxKLOs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-After successfully added go to your VM and we need the Public IP Address so we can connect to it by Remote Desktop
+
+<img src="https://i.imgur.com/CoqjPiS.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+-Copy the IP address and go to your search(your actual computer) and search for remote desktop
+
+<img src="https://i.imgur.com/gg2vCXK.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+
+First will tell that the identify computer cannot be verified and if you want to connect anyway select "Yes" 
+
+<img src="https://i.imgur.com/dsrHeUi.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+and second (once into the VM) will and you about chooosing your privacy setting select "No" for everything 
 
 
-<img src="https://i.imgur.com/Sf7YXNQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/45xt66X.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 
-<img src="https://i.imgur.com/Sf7YXNQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dsrHeUi.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+
+
+
+<img src="https://i.imgur.com/45xt66X.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
