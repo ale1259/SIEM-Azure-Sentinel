@@ -135,7 +135,7 @@ and second (once into the VM) will and you about chooosing your privacy setting 
  <img src="https://i.imgur.com/x7nvUjR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
  
- -And copy the code from this link in that file https://github.com/ale1259/SIEM-Azure Sentinel/blob/main/Custom%20Security%20Log%20Exporter.ps1
+ -And copy the code from this link in that file https://github.com/ale1259/SIEM-Azure-Sentinel/blob/main/Custom%20Security%20Log%20Exporter.ps1
 
 <img src="https://i.imgur.com/eTERvbN.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
