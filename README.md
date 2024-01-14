@@ -191,14 +191,46 @@ and second (once into the VM) will and you about chooosing your privacy setting 
 
 <img src="https://i.imgur.com/z2PDtRg.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
- -Now that the logs are visible there is a column on the entries that is called RawData we need to extract certain fields from it and have separeted in differents fields like latitude, longitude,counrty, etc.
+ -Now that the logs are visible there is a column on the entries that is called RawData we need to extract certain fields from it and have separeted into differents fields like latitude, longitude,counrty, etc. To do this copy the content this script https://github.com/ale1259/SIEM-Azure-Sentinel/blob/main/query_log and paste it on the query. You should be able to see the columns divided like this. 
 
-<img src="https://i.imgur.com/3lDA6kM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5vQwNcV.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+ -Now that we know the logs are coming we need just need to wait for the bad people on the internet to discover the VM, but in the meantime we can finish setting up our map in sentinel. To do that I suggest that you open a new tab on the browser and go to the Azure Portal. Go to the search bar and type sentinel. Click on your previous created Log Analytics Workspace
+
+<img src="https://i.imgur.com/eQGKewX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+ -Unchecked New Overview
+
+<img src="https://i.imgur.com/5Rozz1S.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+ -It will change to this window that is like a general dashboard of Microsoft Sentinel. 
+
+ <img src="https://i.imgur.com/NnJz71m.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+
+  -For the next step click on "Workbooks" on the left column
+
+<img src="https://i.imgur.com/DTh53T6.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+
+ -And we will Add a New Workbook 
+ 
+<img src="https://i.imgur.com/IPh7paf.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+ -On the new window click on Edit 
+ 
+<img src="https://i.imgur.com/QZ0e1rB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  -We are going to remove those two widgets that come with the workbook
+ 
+<img src="https://i.imgur.com/Twb35Ej.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/Wdop1fj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+  -And it should look like this and we need to Add a query
+
+<img src="https://i.imgur.com/tz9yjz3.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 
-<img src="https://i.imgur.com/AJ1QBii.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5Rozz1S.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-
-<img src="https://i.imgur.com/AJ1QBii.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
