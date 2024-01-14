@@ -22,7 +22,7 @@ In this project I setup Azure Sentinel, a SIEM(Security Information and Event Ma
 <h2>High-Level Deployment</h2> 
 
 
- - Craeting Resources in Azure:
+ - Creating Resources in Azure:
 
    -First we need to create our Honeypot VM(Virtual Machine) to do this we go to Virtual Machines->Create
 
