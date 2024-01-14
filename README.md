@@ -11,7 +11,7 @@ In this project I setup Azure Sentinel, a SIEM(Security Information and Event Ma
 
 - Azure Sentinel 
 
-- PowerShell
+- PowerShell ISE
 
 - Geolocation.io API Key
 
@@ -135,13 +135,13 @@ and second (once into the VM) will and you about chooosing your privacy setting 
  <img src="https://i.imgur.com/x7nvUjR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
  
- -And copy the code from this link in that file https://github.com/ale1259/SIEM-Azure-Sentinel/blob/main/Custom%20Security%20Log%20Exporter.ps1
+ -And copy the code from this link in the blank https://github.com/ale1259/SIEM-Azure-Sentinel/blob/main/Custom%20Security%20Log%20Exporter.ps1
 
 <img src="https://i.imgur.com/eTERvbN.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
  -To continue we need to obtain a new API KEY number that is unique 
 
- <img src="https://i.imgur.com/WJG25O5.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/3OidBve.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
  
  -To do this go to https://ipgeolocation.io/. This is a free app that we will use for our project. Click on the three bars, sign up, enter all the information: username, password and email address necessary  
@@ -152,14 +152,30 @@ and second (once into the VM) will and you about chooosing your privacy setting 
 
 <img src="https://i.imgur.com/LYbTdb3.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
+ -Once you have your new key replace it and run the command
 
-<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/GTRWs7Z.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+ -I suggest that you save this script to do that click Save script so you can use anytime 
+
+<img src="https://i.imgur.com/xR9eJMX.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+ -After you run the command this will create a text file on C:\ProgramData\failed_rdp.log that will gather all the logs that failed, pull out the IP address of the attacker and put it on the map with Free IP Geolocation API Lookup Database 
+ 
+ -As a test try to login into the VM again and type a wrong password. The log will show up on Powershell ISE and any attempt to login into the VM from anyhwere in the world
+
+<img src="https://i.imgur.com/w4SVavy.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+ -Now we need to create a custom log in our Log Analytics Workspace that will allows us to bring all those custom logs with the geodate into our Log Analytics Workspace, so go to Log Analytics Workspace, select the one you created and on the left column go to Tables -> Create -> New custom log(MMA based). This step is to train Log Analytics Workspace what to look for in the log file
+
+<img src="https://i.imgur.com/HRWCjOu.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+ -The file we need is the file from our VM that is collecting the logs that is C:\ProgramData\failed_rdp.log. When creating the custom log you need to copy the failed_rdp.log. file into your actual computer and select that file, then click Next skipping the Recorder delimiter section and on Collecting paths select type Windows and C:\ProgramData\failed_rdp.log. is the path on the VM, on Details I name the custom log FAILED_RDP_WITH_GEO_CL you can name it whatever you like, click next and Review and create. 
+
+ -This will take a while for the Log Analytics Workspace and th VM to sync up and bring the logs into Log Analytics Workspace.
 
 
-<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
-
-<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
 <img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
