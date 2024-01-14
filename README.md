@@ -67,11 +67,11 @@ In this project I setup Azure Sentinel, a SIEM(Security Information and Event Ma
   
   -After that since we need to connect our VM with the Log Analytics Workspace go to the Log Analytics Workspace(LAW-Honeypot1 my case) and on the left column go to Virtual Machines(deprecated) and select your VM
 
-<img src="https://i.imgur.com/C7IifSE.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/C7IifSE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
- -Click on connect. As you can see my is already connected
+ -Click on connect to connect both
  
-<img src="https://i.imgur.com/X4LJyvH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/g9DAWp0.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
  
  -Now we need to create Sentinel. On your Azure Portal go and type sentinel on the search bar and choose Microsoft Sentinel. 
 
@@ -172,10 +172,10 @@ and second (once into the VM) will and you about chooosing your privacy setting 
 
  -The file we need is the file from our VM that is collecting the logs that is C:\ProgramData\failed_rdp.log. When creating the custom log you need to copy the failed_rdp.log. file into your actual computer and select that file, then click Next skipping the Recorder delimiter section and on Collecting paths select type Windows and C:\ProgramData\failed_rdp.log. is the path on the VM, on Details I name the custom log FAILED_RDP_WITH_GEO_CL you can name it whatever you like, click next and Review and create. 
 
- -This will take a while for the Log Analytics Workspace and th VM to sync up and bring the logs into Log Analytics Workspace.
+ -This will take a while for the Log Analytics Workspace and th VM to sync up and bring the logs into Log Analytics Workspace. To see this got to your Log Analytics Workspace and on the left column select Logs. Type your custom log name, FAILED_RDP_WITH_GEO_CL is my case. 
 
+<img src="https://i.imgur.com/KsBqZz5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-
-
-<img src="https://i.imgur.com/EX07Dfp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+Probably will say "No results found from the last 24 hours' as in the picture, but you can see later the custom logs entries there 
+<img src="https://i.imgur.com/AJ1QBii.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
