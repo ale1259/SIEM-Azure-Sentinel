@@ -269,6 +269,11 @@ and second (once into the VM) will and you about chooosing your privacy setting 
  -Someone from Canada already tried to login into my VM as you can see let's wait to see if it shows up on the map this may take a couple hours so don't desperate this is for educational purposes
 
  <img src="https://i.imgur.com/XK8SLmQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  -A couple hours later we can see the attacks from Canada on the map as well as the IP address. A total of 89 failed attempts to login into the VM and two extra form my computer to text connectivity 
+
+<img src="https://i.imgur.com/THxuw8s.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
  
 
 
