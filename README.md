@@ -262,7 +262,7 @@ and second (once into the VM) will and you about chooosing your privacy setting 
 
  -Something important to have in mind the VM with the Powershell script running still need to be running to allow the map to collect the data if not will only be gather by Windows Events logs and not to our custom log which is what we need for the extraction of the geodata.
 
- -Now we just need to wait for the attackers and the Map to locate the attacks. Leave the map open and wait for it you can set an Auto refresh or do it manually
+ -The green spot were my failed attempts to login into the VM before. Now we just need to wait for the attackers and the Map to locate the attacks. Leave the map open and wait for it, you can set an Auto refresh or do it manually
  
 <img src="https://i.imgur.com/4oar0ub.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
