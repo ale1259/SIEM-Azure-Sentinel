@@ -260,7 +260,7 @@ and second (once into the VM) will and you about chooosing your privacy setting 
  -And save the map. You can choose a name like "Failed RDP World Map", your Resource Group and same region of your VM and Save it adn Done Editing. 
 <img src="https://i.imgur.com/y6P27Zt.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
- -Something important to have in mind the VM with the Powershell script running still need to be running to allow the map to collect the data if not will only be gather by Windows Events logs and not to our custom log which is what we need for the extraction of the geodata
+ -Something important to have in mind the VM with the Powershell script running still need to be running to allow the map to collect the data if not will only be gather by Windows Events logs and not to our custom log which is what we need for the extraction of the geodata.
 
  -Now we just need to wait for the attackers and the Map to locate the attacks. Leave the map open and wait for it you can set an Auto refresh or do it manually
  
