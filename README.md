@@ -273,6 +273,13 @@ and second (once into the VM) will and you about chooosing your privacy setting 
   -A couple hours later we can see the attacks from Canada on the map as well as the IP address. A total of 89 failed attempts to login into the VM and two extra form my computer to text connectivity 
 
 <img src="https://i.imgur.com/THxuw8s.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+ -After some hours I checked again and now the Philippines has join the party with a huge amount of attempts a total of three thousand plus attempts to login in my VM
+
+<img src="https://i.imgur.com/g6OEjAI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+ -This conclude our lab the monitoring could continue but I think this was enough to give you and idea of what a SIEM Tool, Azure Sentinel in this case look like
+ 
   
  
 
