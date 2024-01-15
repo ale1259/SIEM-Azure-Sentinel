@@ -17,7 +17,7 @@ In this project I setup Azure Sentinel, a SIEM(Security Information and Event Ma
 
 <h2>Operating Systems Used</h2>
 
-- Windows
+- Windows 10
 
 <h2>High-Level Deployment</h2> 
 
